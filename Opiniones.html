@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opiniones - Puente de tus Sueños</title>
+    <link rel="stylesheet" href="opiniones.css" type="text/css">
+    <script lang="javascript"></script>
+    <script src="jquery-ui-1.13.3.custom/external/jquery/jquery.js"></script>  
+</head>
+<body alink="" vlink="white" link="white">
+
+    <header class="encabezado">
+        <center><img src="logo.png" class="imagen"></center>
+    </header>
+    <nav>
+        <a href="Inicio.html">Inicio</a> |
+        <a href="compra.html">Compra</a> |
+        <a href="alquiler.html">Alquiler</a> |
+        <a href="venta.html">Venta</a> |
+        <a href="contacto.html">Contacto/Redes</a> |
+        <a href="opiniones.html">Opiniones de clientes</a>
+    </nav>
+        <h2>¡Comentanos acerca de tu experiencia con nosotros, y deja tu comentario!</h2>
+        <form id="formulario-comentario">
+            <input type="text" id="nombre" placeholder="Nombre completo" required><br><br>
+            <textarea id="comentario" placeholder="Comentenos su experiencia"rows="2" cols="20" required></textarea><br><br>
+            <button type="submit" id="enviar_comentario">Enviar comentario</button>
+        </form>
+
+        <div id="comentarios">
+            <p><b><h3>Comentarios más destacados:</b></h3>
+                <ul>
+                    <li><b>Emiliano Rueda:</b> Excelente servicio y atencion!</li>
+                    <li><b>Giuliana Cappellini</b> Muy buenos precios y disponibilidad de propiedades muy variadas.</li>
+                    <li><b>Delfina Rodriguez</b> Calidez y bondad ante todo al momento de vender.</li>
+                    <li><b>Maximo Ferreyra:</b> De gran ayuda al comprar mi nuevo terreno en Cañuelas.</li>
+                </ul>
+          </div>
+          <footer>
+            <center><p>2024 Inmobiliaria Puente de tus Sueños - Todos los derechos reservados | <a href="https://twitter.com/PteDeTusSuenos" target="_blank"><img src="Twitter2.jpg" alt="X"></a> | <a href="https://www.instagram.com/puente.de.tus.suenos/" target="_blank"><img src="IG2.jpg" alt="Instagram"></a></p></center>
+        </footer>
+        <script>
+            $(document).ready(function(){
+                $("#enviar_comentario").click(function(event){
+                    var nombre = document.getElementById("nombre").value;
+                    var comentario = document.getElementById("comentario").value;
+    
+                    if (nombre === "" || comentario === "") {
+                        alert("Faltan completar datos.");
+                    } else {
+                        alert("¡Consulta enviada!");
+                    }
+                });
+            });
+        </script>
+</body>
+</html>
+

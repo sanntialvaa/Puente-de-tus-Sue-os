@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra - Puente de tus Sueños</title>
+    <link rel="stylesheet" href="Compra.css" type="text/css">
+    <script src="jquery-ui-1.13.3.custom/external/jquery/jquery.js"></script>   
+</head>
+<body alink="" vlink="white" link="white">
+
+    <header>
+        <center><img src="logo.png" class="imagen"> </center>
+    </header>
+    <nav>   
+        <a href="Inicio.html">Inicio</a> |
+        <a href="compra.html">Compra</a> |
+        <a href="alquiler.html">Alquiler</a> |
+        <a href="venta.html">Venta</a> |
+        <a href="contacto.html">Contacto/Redes</a> |
+        <a href="opiniones.html">Opiniones de clientes</a>
+    </nav>
+    <p>
+        <ul>
+            <section class="propiedad">
+                <div class="propiedad">
+                    <h1>Propiedades disponibles para comprar:</h1>
+                    <h3>Casa estilo moderno</h3><h4>📍Recoleta</h4>
+                    <div class="propiedad1">
+                        <img src="Propiedad1.jpg" alt="Propiedad 1" id="propiedad1"><p><h4>$100.000 USD</h4>Esta impresionante residencia minimalista y
+                        moderna ofrece un estilo de vida de lujo y confort. Con líneas limpias y elegantes, esta casa cautiva con su diseño 
+                        contemporáneo y su atención al detalle. Ubicada en un entorno sereno, esta propiedad cuenta con una amplia área de estar 
+                        que fluye sin problemas hacia el exterior, donde una hermosa piscina espera para refrescar los días soleados. Los interiores 
+                        están inundados de luz natural, resaltando los acabados de alta calidad y la arquitectura impecable. Con una cuidadosa 
+                        planificación espacial, cada rincón de esta casa ha sido diseñado para maximizar la funcionalidad y el disfrute. 
+                        Esta casa minimalista ofrece un oasis de tranquilidad y sofisticación, donde la elegancia contemporánea se combina 
+                        perfectamente con la comodidad moderna.</p>
+                    </div>                       
+                </div>
+                
+                <div class="Propiedad">
+                    <h3>Casa estilo vintage</h3><h4>📍Berazategui</h4>
+                    <div class="propiedad2">
+                        <img src="Propiedad2.jpg" alt="Propiedad 2" id="Propiedad2"><p><h4>$60.000 USD</h4></p>
+                        Descubra una encantadora fusión de estilos en esta casa única. Desde el exterior, su arquitectura contemporánea 
+                        atrae todas las miradas, mientras que en su interior, se transportará a una época pasada con un encantador estilo vintage. 
+                        Cada rincón ofrece una experiencia de nostalgia elegante, combinada con comodidades modernas para brindarle lo mejor de 
+                        ambos mundos. Sumérjase en el encanto de lo vintage mientras disfruta de la sofisticación contemporánea en esta 
+                        cautivadora residencia.
+                    </div>
+                </div>
+
+                <div class="Propiedad">
+                    <h3>Penthouse zona sur de Buenos Aires</h3><h4>📍Avellaneda</h4>
+                    <div class="propiedad5">
+                        <video id="propiedad5" src="Propiedad5.mp4" alt="Propiedad 5" height="480" controls></video><p><h4>$490.000 USD</h4></p>
+                    </div>
+                </div>
+            </section> 
+        </ul>
+    </p>
+    <footer>
+        <center><p>2024 Inmobiliaria Puente de tus Sueños - Todos los derechos reservados | <a href="https://twitter.com/PteDeTusSuenos" target="_blank"><img src="Twitter2.jpg" alt="X"></a> | <a href="https://www.instagram.com/puente.de.tus.suenos/" target="_blank"><img src="IG2.jpg" alt="Instagram"></a></p></center>
+    </footer>
+    <script>
+        $(document).ready(function(){
+            $("#propiedad1").hover(function(){
+                $(this).animate({height: "250px"}, "slow");
+                $(this).animate({width: "375px"}, "slow");
+            }, function(){
+                $(this).animate({width: "275px"}, "slow");
+                $(this).animate({height: "180px"}, "slow");
+            });
+        });
+        $(document).ready(function(){
+            $("#Propiedad2").hover(function(){
+                $(this).animate({height: "250px"}, "slow");
+                $(this).animate({width: "375px"}, "slow");
+            }, function(){
+                $(this).animate({width: "275px"}, "slow");
+                $(this).animate({height: "180px"}, "slow");
+            });
+        });
+    </script>
+</body>
+</html>

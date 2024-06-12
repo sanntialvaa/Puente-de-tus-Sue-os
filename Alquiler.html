@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alquiler - Puente de tus Sueños</title>
+    <link rel="stylesheet" href="Alquiler.css" type="text/css">
+    <script lang="javascript"></script>
+    <script src="jquery-ui-1.13.3.custom/external/jquery/jquery.js"></script> 
+</head>
+<body alink="" vlink="white" link="white">
+
+    <header>
+        <center><img src="logo.png" class="imagen"> </center>
+    </header>
+    <nav>   
+        <a href="Inicio.html">Inicio</a> |
+        <a href="compra.html">Compra</a> |
+        <a href="alquiler.html">Alquiler</a> |
+        <a href="venta.html">Venta</a> |
+        <a href="contacto.html">Contacto/Redes</a> |
+        <a href="opiniones.html">Opiniones de clientes</a>
+    </nav>
+    <p>
+        <ul>
+            <section class="propiedad">
+                <div class="propiedad">
+                    <h1>Propiedades disponibles para alquilar:</h1>
+                    <div class="Propiedad4">
+                        <h3>Departamento zona centro de Buenos Aires</h3><h4>📍Palermo</h4>
+                        <div class="propiedad4">
+                            <img src="Propiedad4.jpeg" alt="Propiedad 4" id="Propiedad4"></a><p><h4>$400 USD/mes</h4></p>Este acogedor departamento ofrece una 
+                            ubicación privilegiada en Buenos Aires, situado a pocos minutos del vibrante corazón de la ciudad. Con fácil acceso 
+                            al centro y a las principales atracciones, este hogar brinda comodidad y conveniencia. Además, su proximidad a reconocidas 
+                            universidades como la UBA y la UADE lo convierte en una excelente opción para estudiantes y profesionales que buscan un 
+                            lugar cercano a su institución educativa. Disfrute de la vida urbana y académica en este cómodo espacio.
+                        </div>
+                    </div>
+                    <div class="propiedad3">
+                        <h3>Chalet con parque y alta tecnologia</h3><h4>📍Cañuelas</h4>
+                        <div class="propiedad3">
+                            <img src="propiedad3.jpg" alt="Propiedad 3" id="Propiedad3"></a><p><h4>1.000 USD/mes</h4></p>Bienvenido a este encantador chalet 
+                            que ofrece lo mejor de la elegancia clásica y la tecnología moderna. Situado en un amplio terreno con un hermoso parque, 
+                            esta propiedad combina un ambiente tranquilo con comodidades de alta gama. Con espacios luminosos y acabados de calidad, 
+                            este chalet es ideal para aquellos que buscan un estilo de vida sofisticado y conectado. Disfrute del lujo de la vida al 
+                            aire libre en el parque bien cuidado y aproveche las comodidades tecnológicas que hacen que la vida sea más fácil y conveniente.
+                        </div>
+                    </div>
+                </div>
+            </section> 
+        </ul>
+    </p>
+    <footer>
+        <center><p>2024 Inmobiliaria Puente de tus Sueños - Todos los derechos reservados | <a href="https://twitter.com/PteDeTusSuenos" target="_blank"><img src="Twitter2.jpg" alt="X"></a> | <a href="https://www.instagram.com/puente.de.tus.suenos/" target="_blank"><img src="IG2.jpg" alt="Instagram"></a></p></center>
+    </footer>
+    <script>
+        $(document).ready(function(){
+            $("#Propiedad3").hover(function(){
+                $(this).animate({height: "250px"}, "slow");
+                $(this).animate({width: "375px"}, "slow");
+            }, function(){
+                $(this).animate({width: "275px"}, "slow");
+                $(this).animate({height: "180px"}, "slow");
+            });
+        });
+        $(document).ready(function(){
+            $("#Propiedad4").hover(function(){
+                $(this).animate({height: "250px"}, "slow");
+                $(this).animate({width: "375px"}, "slow");
+            }, function(){
+                $(this).animate({width: "275px"}, "slow");
+                $(this).animate({height: "180px"}, "slow");
+            });
+        });
+    </script>
+</body>
+</html>

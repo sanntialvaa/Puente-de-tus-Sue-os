@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta - Puente de tus Sueños</title>
+    <link rel="stylesheet" href="Venta.css" type="text/css">
+    <script lang="javascript"></script>
+    <script src="jquery-ui-1.13.3.custom/external/jquery/jquery.js"></script>   
+</head>
+<body alink="" vlink="white" link="white">
+
+    <header>
+        <center><img src="logo.png" class="imagen"></center>
+    </header>
+    <nav>
+        <a href="Inicio.html">Inicio</a> |
+        <a href="compra.html">Compra</a> |
+        <a href="alquiler.html">Alquiler</a> |
+        <a href="venta.html">Venta</a> |
+        <a href="contacto.html">Contacto/Redes</a> |
+        <a href="opiniones.html">Opiniones de clientes</a>
+    </nav>
+
+    <p>
+        <section class="vender">
+            <h2>Completando el siguiente formulario, usted podrá recibir una cotización de su propiedad y obtener el mejor asesoramiento 
+                en el caso de que desee venderla o alquilarla en nuestra inmobiliaria.</h2>
+            <form action="formulario.php" method="post">
+                <ul>
+                    <li><input type="text" id="nombre" placeholder="Nombre Completo" required></li><br>
+                    <li><input type="email" id="email" placeholder="Correo Electrónico"required></li><br>
+                    <li><input type="tel" id="Celular" placeholder="Telefono/Celular"></li><br>
+                    <li><select required>
+                        <option>Casa</option>
+                        <option>Departamento</option>
+                        <option>Terreno</option>
+                        <option>Edificio</option>
+                        <option>Otro (especifique debajo)</option>    
+                    </select></li><br>
+                    <li><textarea id="mensaje" placeholder="Descripcion de la propiedad" required></textarea></li><br>
+                    <input type="button" id="enviar_formulario" value="Enviar formulario">
+                </ul>
+            </form>
+        </section>
+    </p>
+    <footer>
+        <center><p>2024 Inmobiliaria Puente de tus Sueños - Todos los derechos reservados | <a href="https://twitter.com/PteDeTusSuenos" target="_blank"><img src="Twitter2.jpg" alt="X"></a> | <a href="https://www.instagram.com/puente.de.tus.suenos/" target="_blank"><img src="IG2.jpg" alt="Instagram"></a></p></center>
+    </footer>
+    <script>
+        $(document).ready(function(){
+            $("#enviar_formulario").click(function(event){
+                var nombre = document.getElementById("nombre").value;
+                var email = document.getElementById("email").value;
+                var mensaje = document.getElementById("mensaje").value;
+
+                if (nombre === "" || email === "" || mensaje === "") {
+                    alert("Faltan completar datos.");
+                } else {
+                    alert("¡Formulario enviado!");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+

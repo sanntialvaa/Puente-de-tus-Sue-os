@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Puente de tus Sueños</title>
+    <link rel="stylesheet" href="contacto.css" type="text/css">
+    <script lang="javascript"></script>
+    <script src="jquery-ui-1.13.3.custom/external/jquery/jquery.js"></script>  
+</head>
+<body alink="" vlink="white" link="white">
+
+    <header class="encabezado">
+        <center><img src="logo.png" class="imagen"></center>
+    </header>
+    <nav>
+        <a href="Inicio.html">Inicio</a> |
+        <a href="compra.html">Compra</a> |
+        <a href="alquiler.html">Alquiler</a> |
+        <a href="venta.html">Venta</a> |
+        <a href="contacto.html">Contacto/Redes</a> |
+        <a href="opiniones.html">Opiniones de clientes</a>
+    </nav>
+
+    <section class="mensaje">
+        <h2>Envianos tu consulta</h2>
+        <form id="Contacto">
+            <ul>
+            <li><input type="text" id="nombre" placeholder="Nombre Completo" required></li><br>
+            <li><input type="email" id="email" placeholder="Correo Electrónico"required></li><br>
+            <li><input type="tel" id="Celular" placeholder="Telefono/Celular"></li><br>
+            <li><textarea id="mensaje" placeholder="Mensaje"required></textarea></li><br>
+            <button type="submit" id="enviar_consulta">Enviar consulta</button>
+            </ul>
+        </form>
+    </section>
+    <section class="contacto">
+        <h2>Informacion de contacto</h2>
+        <li>Direccion: Av. Independencia 3377, Capital Federal.</li>
+        <li>Horario: Lunes a Viernes de 8hs a 16hs.</li>
+        <li>Celular: +54 11 6295 1968</li>
+        <li>Correo electronico: puentedetussuenos@gmail.com</li>
+        <li>Redes sociales:<br>
+            <a href="https://twitter.com/PteDeTusSuenos" target="_blank"><img src="Twitter.png" alt="X"></a><a href="https://www.instagram.com/puente.de.tus.suenos/" target="_blank"><img src="IG.png" alt="Instagram"></a></li>
+
+    </section>
+    <footer>
+        <center><p>2024 Inmobiliaria Puente de tus Sueños - Todos los derechos reservados | <a href="https://twitter.com/PteDeTusSuenos" target="_blank"><img src="Twitter2.jpg" alt="X"></a> | <a href="https://www.instagram.com/puente.de.tus.suenos/" target="_blank"><img src="IG2.jpg" alt="Instagram"></a></p></center>
+    </footer>
+    <script>
+        $(document).ready(function(){
+            $("#enviar_consulta").click(function(event){
+                var nombre = document.getElementById("nombre").value;
+                var email = document.getElementById("email").value;
+                var mensaje = document.getElementById("mensaje").value;
+
+                if (nombre === "" || email === "" || mensaje === "") {
+                    alert("Faltan completar datos.");
+                } else {
+                    alert("¡Consulta enviada!");
+                }
+            });
+        });
+    </script>
+</body>
+</html>

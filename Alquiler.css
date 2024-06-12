@@ -1,0 +1,63 @@
+body 
+{
+    background-color: #fefefe;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 0px;
+    min-height: 100vh;
+    padding: 0px;
+}
+
+footer 
+{
+    background-color: #100a49; 
+    bottom: 0px;
+    color: white;
+    height: 40px;
+    padding: 10px;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+}
+
+header 
+{
+    background-color: #100a49; 
+    border-color:#000000;
+    padding: 10px;
+    text-align: left;
+}
+
+.imagen 
+{
+    height: 150px; 
+    width: 400px; 
+}
+
+nav 
+{
+    background-color: #100a49; 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.propiedad3 img 
+{
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+.propiedad4 img 
+{
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+section 
+{
+    padding: 20px;
+}
